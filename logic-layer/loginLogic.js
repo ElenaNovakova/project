@@ -8,16 +8,14 @@ function LoginLogic() {
 
     this.checkInputs();
 
-    
-    this.getInuts = function(){
+    this.getInputs = function(){
         var firstName = $("#firstName").val()
         var lastName = $("#lastName").val()
         var grade = $("#odd").val()
 
-        this.user = new User(firstName, lastName, grade)
-        console.log(this.user);
-        
-        // return this.inputsArray;
+        this.user = new User(firstName, lastName, grade);
+        localStorage.setItem('this.user', JSON.stringify(this.user));
+        return this.user 
     }
 
 }

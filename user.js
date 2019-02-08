@@ -1,5 +1,5 @@
 function User(firstName, lastName, grade){
-    this.furstName = firstName;
+    this.firstName = firstName;
     this.lastName = lastName;
-    this.grade = grade
+    this.grade = grade;
 }

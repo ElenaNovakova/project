@@ -1,8 +1,9 @@
-// function RenderUser () {
-//     var login = new LoginLogic();
-
-//     $("<div>").appendTo(".questionsContainer").addClass("userInputs").html(login.getInuts()[0] + " "
-//     + login.getInuts()[1] + ", "
-//     + login.getInuts()[2] + " одделение")
-// }
+function RenderUser () {
+    var login = new LoginLogic();
+    var userRender = login.getInputs() 
+    
+    $("<div>").appendTo(".questionsContainer").addClass("userInputs").html(userRender.firstName + " "
+    + userRender.lastName + ", "
+    + userRender.grade + " одделение")
+}
 
