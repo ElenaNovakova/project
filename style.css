@@ -89,14 +89,14 @@ nav {
 }
 
 
-.img-slaidshow {
-    width: 100%;
+.img-slideshow {
+    width: 80%;
     height: 600px;
-    margin: 80px auto 0;
+    margin: 20px auto 0;
     transition: all 0.5s ease;
 }
 
-.img-slaidshow img {
+.img-slideshow img {
     height: 100%;
     width: 100%;
 }

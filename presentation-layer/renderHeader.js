@@ -19,20 +19,25 @@ function Header(){
     $(".home").on("click", function(){
         $("#mainTest").hide()
         $("#main-start").show();
-        $("#magic").hide()
+        $("#magic").hide();
+        $(".img-slideshow").show()
+        RenderStart()
    
     })
 
     $("#test").on("click", function(){
         $("#mainTest").show()
         $("#main-start").hide()
-        $("#magic").hide()
+        $("#magic").hide();
+        $(".img-slideshow").hide()
     });
 
     $("#toMagic").one("click", function(){
         $("#mainTest").hide()
         $("#main-start").hide()
         $("#magic").show()
+        $(".img-slideshow").hide()
+
 
         RenderMagic();
 
