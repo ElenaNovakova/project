@@ -3,10 +3,11 @@ function RenderTest() {
     var newGenerateQuestion = new QuestionRepo();
     this.givenQuestion = newGenerateQuestion.generateQuestions();
     var timer = new Timer(this.givenQuestion.time)
-    $(".timer").text(timer);
+    $(".timer").html(timer);
 
-    this.blabla = ($(".timer")).text();
-    console.log(this.blabla);
+    this.timeOut = ($(".timer")).text();
+    console.log(this.timeOut);
+ 
 
 
     this.renderTestPage = function (givenQuestion) {

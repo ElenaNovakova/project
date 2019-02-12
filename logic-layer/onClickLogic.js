@@ -24,12 +24,12 @@ function OnClickLogic() {
     this.collectAllQuestions = () => {
         var test = new RenderTest();
         this.allQuestions.push(test.givenQuestion);
-        if (test.blabla === 0) {
+        if (test.timeOut == -1) {
             console.log("snema vreme");
             
         }
 
-        // console.log(test.blabla);
+        console.log(test.timeOut);
         
         return this.allQuestions
     }

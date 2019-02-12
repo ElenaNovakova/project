@@ -126,7 +126,7 @@ nav {
     flex-direction: column;
     margin: auto 0;
     background-color: #FFF;
-    position: absolute;
+    position: absolute;;
     z-index: 10;
     top: 80px;
     /* left: 200px; 
@@ -138,6 +138,9 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 150px);
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
 }
 
 /******START TEST**********/
@@ -152,11 +155,15 @@ nav {
     width: 80%;
     margin: 0 auto;
     opacity: 1;
-    
+    z-index: 5;
+   
 }
 
 .startTest p {
-    text-align: justify;
+    font-weight: bold;
+    font-size: 25px;
+    opacity: 1;
+    z-index: 5;
 }
 
 .startTest span {
