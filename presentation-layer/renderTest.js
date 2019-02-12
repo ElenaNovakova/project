@@ -1,14 +1,10 @@
 function RenderTest() {
-
     var newGenerateQuestion = new QuestionRepo();
     this.givenQuestion = newGenerateQuestion.generateQuestions();
     var timer = new Timer(this.givenQuestion.time)
     $(".timer").html(timer);
 
     this.timeOut = ($(".timer")).text();
-    console.log(this.timeOut);
- 
-
 
     this.renderTestPage = function (givenQuestion) {
         $(".question").text(givenQuestion.question);
@@ -28,7 +24,6 @@ function RenderTest() {
     $("#next").on("click", this.clearTimer);
 
     this.getAnswers = []
-    
 
     $('input').unbind('click').click((event) => {
         this.getAnswers.push(event.target.id)

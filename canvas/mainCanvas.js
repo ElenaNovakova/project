@@ -34,8 +34,6 @@ var context = canvas.getContext('2d');
 
 
 
-
-
 var colorArray = [
     "#C6DEE8",
     "#2E86AB",

@@ -24,19 +24,13 @@ function OnClickLogic() {
     this.collectAllQuestions = () => {
         var test = new RenderTest();
         this.allQuestions.push(test.givenQuestion);
-        if (test.timeOut == -1) {
+        var timeOutNumber = parseInt(test.timeOut)
+        if (timeOutNumber === -1) {
             console.log("snema vreme");
-            
         }
-
-        console.log(test.timeOut);
-        
         return this.allQuestions
     }
 
-    this.notAnswered = function(){
-
-    }
 
     $("#goToTest").on("click", this.collectAllQuestions)
     $("#next").on("click", this.collectAllQuestions)
@@ -80,8 +74,6 @@ function OnClickLogic() {
         $("<span>").appendTo(".testEnded").text("Освоивте " + addPoints.startPoints + " поени")
     }
     $("#testEnded").on("click", this.correctAnswer);
-
-
 
     this.countClick = function () {
         var count = 0;
