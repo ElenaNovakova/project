@@ -1,8 +1,8 @@
 function RenderStart() {
-    $("<img>").attr("src", "img/img1.jpg").attr("alt","img1").appendTo(".img-slideshow").attr("id", "img1").css("opacity", "1")
+    $("<img>").attr("src", "img/img1.jpg").appendTo(".img-slideshow").attr("id", "img1").css("opacity", "1")
 
 
-for (let i = 2; i <= 8; i++){
+for (let i = 1; i <= 8; i++){
     setInterval(function(){
      
         $(".img-slideshow").empty()
@@ -12,7 +12,7 @@ for (let i = 2; i <= 8; i++){
  
     $(".dots span:not(:nth-child("+ i +")").css("background-color","#bbb" )
 
-    },5000*i)
+    },5000)
 }
 }
 

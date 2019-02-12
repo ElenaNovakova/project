@@ -1,6 +1,6 @@
 function RenderMagic(){
 
-    $("<p>").appendTo("#magic").text("Сумата на сите дијагонали, редици и колони треба да биде 24")
+    $("<p>").appendTo("#magic").text("Збирот на броевите во сите редици, колони и дијагонали треба да биде еднаков.")
 
     $("<div>").appendTo("#magic").addClass("magicSquare");
 

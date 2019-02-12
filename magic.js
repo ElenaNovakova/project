@@ -57,7 +57,7 @@ function Magic() {
     if (allCorrect) {
         alert("Браво, го решивте магичниот квадрат!")
     } else {
-        alert("Обидете се повторни, имате " + wrongAnswers + " грешки")
+        alert("Обидете се повторнo, имате " + wrongAnswers + " грешки")
     }
 }
 
